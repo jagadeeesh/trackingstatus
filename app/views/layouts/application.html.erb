@@ -7,17 +7,15 @@
     <%= stylesheet_link_tag 'mobile' if mobile_device? %>
     <%= yield(:head) %>
   </head>
-  <body>
-    <div id="container">
-      <p>
-        <% if mobile_device? %>
-          <%= link_to "Full Site", :mobile => 0 %>
-        <% else %>
-          <%= link_to "Mobile Site", :mobile => 1 %>
-        <% end %>
-      </p>
-      
-      <%- flash.each do |name, msg| -%>
+  <body id="bgimage">
+    <div class="container" >
+        <div class="jumbotron" >
+        <h1>smsMyStatus</h1>      
+        <p>This page will grow as we add more and more components from Bootstrap...</p>      
+        <a href="#" class="btn btn-info btn-lg"> Search</a>
+        </div>
+      <div>
+        <%- flash.each do |name, msg| -%>
         <%= content_tag :div, msg, :id => "flash_#{name}" %>
       <%- end -%>
       
@@ -26,6 +24,6 @@
       <%- end -%>
       
       <%= yield %>
-    </div>
+    </div>  
   </body>
 </html>
