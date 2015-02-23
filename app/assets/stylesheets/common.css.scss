@@ -1,11 +1,23 @@
-body{
-  background-image: image-url('images2.jpg');
-  background-repeat: no-repeat;
-  background-size: 100%;
+.navbar {
+  background: transparent url('menu_paper.png') top left repeat-x;
+  height: 90px;
+}																							
+.navbar .nav > li > a {
+  font-size: 22px;
+  text-shadow: none;
+  color: blue;
+  font-family: "vincentregular";
 }
-.container{
-	background: ghostwhite;
+@font-face {
+    font-family: 'vincentregular';
+    src: url('vincent-regular-webfont.eot');
+    src: url('vincent-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('vincent-regular-webfont.woff') format('woff'),
+         url('vincent-regular-webfont.ttf') format('truetype'),
+         url('vincent-regular-webfont.svg#vincentregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
-.container .jumbotron{
-	background: goldenrod;
-}
+
+
